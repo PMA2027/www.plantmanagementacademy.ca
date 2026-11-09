@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Plant Management Academy | Coming Soon</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Montserrat',sans-serif;
+    color:white;
+}
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:40px;
+
+    background:
+    linear-gradient(
+        rgba(1,24,55,0.82),
+        rgba(5,47,103,0.88)
+    ),
+    url('https://images.unsplash.com/photo-1567789884554-0b844b597180?auto=format&fit=crop&w=2000&q=80');
+
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+
+    position:relative;
+    overflow:hidden;
+}
+
+.hero::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background-image:
+      linear-gradient(rgba(255,255,255,.04) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,.04) 1px, transparent 1px);
+    background-size:60px 60px;
+}
+
+.content{
+    position:relative;
+    z-index:2;
+    max-width:1000px;
+}
+
+.logo{
+    width:550px;
+    max-width:95%;
+    margin:0 auto 40px;
+}
+
+h1{
+    font-size:clamp(2.8rem,6vw,5rem);
+    font-weight:800;
+    line-height:1.1;
+    margin-bottom:20px;
+}
+
+.highlight{
+    color:#f9b233;
+}
+
+.subtitle{
+    max-width:800px;
+    margin:0 auto 40px;
+    font-size:1.2rem;
+    line-height:1.8;
+    color:#dfe8f7;
+}
+
+.badges{
+    display:flex;
+    gap:15px;
+    justify-content:center;
+    flex-wrap:wrap;
+    margin-bottom:40px;
+}
+
+.badge{
+    background:rgba(255,255,255,.10);
+    border:1px solid rgba(255,255,255,.15);
+    backdrop-filter:blur(10px);
+    padding:12px 22px;
+    border-radius:999px;
+    font-weight:600;
+}
+
+.button{
+    display:inline-block;
+    text-decoration:none;
+    color:#00254f;
+    background:#f9b233;
+    font-weight:700;
+    font-size:1rem;
+    padding:18px 36px;
+    border-radius:50px;
+    transition:.3s;
+}
+
+.button:hover{
+    transform:translateY(-3px);
+    background:#ffc247;
+}
+
+.tagline{
+    margin-top:35px;
+    letter-spacing:3px;
+    font-weight:700;
+    color:#f9b233;
+}
+
+.footer{
+    margin-top:25px;
+    color:#d0dcef;
+    font-size:.95rem;
+}
+
+.gear{
+    position:absolute;
+    right:-50px;
+    bottom:-50px;
+    width:260px;
+    height:260px;
+    border:10px solid rgba(249,178,51,.12);
+    border-radius:50%;
+}
+</style>
+</head>
+<body>
+
+<section class="hero">
+
+<div class="gear"></div>
+
+<div class="content">
+
+<div class="logo">
+
+<svg viewBox="0 0 700 150" xmlns="http://www.w3.org/2000/svg">
+
+<defs>
+<linearGradient id="orangeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+<stop offset="0%" stop-color="#FFD05A"/>
+<stop offset="100%" stop-color="#F28C00"/>
+</linearGradient>
+</defs>
+
+<circle cx="75" cy="75" r="48" fill="#0a3d78"/>
+<circle cx="75" cy="75" r="22" fill="#ffffff"/>
+
+<path fill="url(#orangeGrad)"
+d="M75 10
+L88 23
+L108 18
+L115 38
+L135 48
+L128 68
+L143 83
+L128 98
+L135 118
+L115 128
+L108 148
+L88 143
+L75 156
+L62 143
+L42 148
+L35 128
+L15 118
+L22 98
+L7 83
+L22 68
+L15 48
+L35 38
+L42 18
+L62 23
+Z"/>
+
+<path d="M40 103 Q88 45 150 36"
+stroke="#ff9a00"
+stroke-width="8"
+fill="none"/>
+
+<polygon points="150,36 132,30 139,50"
+fill="#ff9a00"/>
+
+<text x="190" y="65"
+font-size="34"
+font-family="Montserrat"
+font-weight="700"
+fill="#ffffff">
+PLANT MANAGEMENT
+</text>
+
+<text x="190" y="118"
+font-size="52"
+font-family="Montserrat"
+font-weight="800"
+fill="#ffffff">
+ACADEMY
+</text>
+
+</svg>
+
+</div>
+
+<h1>
+New Manufacturing Leadership<br>
+<span class="highlight">Courses Launching Soon</span>
+</h1>
+
+<p class="subtitle">
+Plant Management Academy is preparing a new generation of practical,
+industry-focused training for Plant Managers, Operations Leaders,
+Production Supervisors, Continuous Improvement professionals,
+and manufacturing teams committed to operational excellence.
+</p>
+
+<div class="badges">
+<div class="badge">Lean Manufacturing</div>
+<div class="badge">Operations Excellence</div>
+<div class="badge">Leadership Development</div>
+<div class="badge">Continuous Improvement</div>
+</div>
+
+<a class="button" href="mailto:info@plantmanagementacademy.com">
+Get Notified
+</a>
+
+<div class="tagline">
+TRAIN • IMPROVE • LEAD
+</div>
+
+<div class="footer">
+Professional manufacturing leadership training and certification programs are coming soon.
+</div>
+
+</div>
+
+</section>
+
+</body>
+</html>
